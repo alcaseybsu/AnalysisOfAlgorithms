@@ -2,18 +2,16 @@
 
 ## Table of Contents
 
-The *'s represent the project's level of difficulty.
-
-- [1. Priority Queue (⋆)](#priority-queue)
-- [2. Non-deterministic LCS reconstruction (⋆)](#non-deterministic-lcs-reconstruction)
-- [3. PyLisp: Recursive puzzles (⋆⋆)](#pylisp-recursive-puzzles)
-- [4. Hash Table with chaining (⋆⋆⋆)](#hash-table-with-chaining)
-- [5. String Edit Distance (⋆⋆⋆)](#string-edit-distance)
-- [6. A Graph library (⋆⋆⋆)](#a-graph-library)
-- [7. Dancing Links (⋆⋆⋆⋆)](#dancing-links)
+- [1. Priority Queue](#priority-queue)
+- [2. Non-deterministic LCS reconstruction](#non-deterministic-lcs-reconstruction)
+- [3. PyLisp: Recursive puzzles](#pylisp-recursive-puzzles)
+- [4. Hash Table with chaining](#hash-table-with-chaining)
+- [5. String Edit Distance](#string-edit-distance)
+- [6. A Graph library](#a-graph-library)
+- [7. Dancing Links](#dancing-links)
 - [What's a Toroidal Linked List?](#whats-a-toroidal-linked-list)
 
-## 1. Priority Queue (⋆)
+## 1. Priority Queue
 
 A priority queue maintains a set of elements, each associated with a value (a *key*). A max-priority queue supports the following operations:
 - `Insert(x)` inserts a new element in the set.
@@ -30,7 +28,7 @@ Priority queue operations are typically implemented with a heap. This projet imp
 - *CLRS3*, Chapter 6.1 through 6.3 (for the basic Heap implementation)
 - *CLRS3*, Chapter 6.5 for the priority queue operations
 
-## 2. Non-deterministic LCS reconstruction (⋆)
+## 2. Non-deterministic LCS reconstruction
 
 The recursive version of the LCS algorithm was the topic of one of your hands-on lectures. Equip it with two added features:
 - a memo, where intermediary results are stored (thus \(O(n^2)\) complexity).
@@ -42,7 +40,7 @@ No file provided; used the code written in class as a starting point.
 ### References
 - *CLRS3*, Chapter 15, for the general presentation of the LCS problem.
 
-## 3. PyLisp: Recursive puzzles (⋆⋆)
+## 3. PyLisp: Recursive puzzles
 
 This assignment is less about a particular algorithm than about introducing you to a model of computation called functional programming, which has you unlearn a number of practices (assigning variables and modifying data structures, to start with) and rely instead on recursion to build the result of a computation. This project comes in the form of your usual classroom assignments, where a skeleton is provided, with pre-written tests for some, but not all functions.
 
@@ -53,7 +51,7 @@ There are two main tasks:
 ### Files Used
 - pylisp_skeleton.py
 
-## 4. Hash Table with chaining (⋆⋆⋆)
+## 4. Hash Table with chaining
 
 Implement a hash table, where collisions are solved through chaining (i.e., linked lists), as described in CLRS 11.2-3, and the related lecture slides. Both integers and strings can be used as keys.
 
@@ -67,7 +65,7 @@ Implement a hash table, where collisions are solved through chaining (i.e., link
 - *CLRS3*, Chapter 11.2-3
 - “hash_table_lecture.pdf” lecture in resources directory
 
-## 5. String Edit Distance (⋆⋆⋆)
+## 5. String Edit Distance
 
 The edit distance scores the similarity between two strings, by computing the cost of a minimal set of operations needed to transform string 1 into string 2. Such operations are typically: **copy**, **replace**, **delete**, **insert**… The algorithm is analogous to the LCS, even if it is slightly more complex, because the recursion involves more cases.
 
@@ -134,7 +132,7 @@ Total cost: \(0 + 1 + 1 + 0 + 1 + 0 = 3\).
 
 Therefore, the output matches the expected results for the edit distance algorithm with the given inputs and default costs. The edit distance is 3, and the alignment correctly reflects the operations needed to transform "ACGA" into "ATGCTA".
 
-## 6. A Graph library (⋆⋆⋆)
+## 6. A Graph library
 
 Implement a Python `graph.py` module, that allows for:
 
@@ -159,7 +157,7 @@ Provide adequate testing.
 - CLRS, Appendix B (Graphs: concepts and representation).
 - Lecture slides (to be added soon--resources directory)
 
-## 7. Dancing Links (⋆⋆⋆⋆)
+## 7. Dancing Links
 
 The exact cover problem takes a matrix of 0s and 1s as an input. Its solution is a set of rows that selects exactly one 1 in each column. Write a Python module that implements Donald Knuth’s solution to the problem, where:
 
