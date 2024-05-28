@@ -4,13 +4,13 @@
 
 The *'s represent the project's level of difficulty.
 
-- [1. Priority Queue (⋆)](#priority-queue)
-- [2. Non-deterministic LCS reconstruction (⋆)](#non-deterministic-lcs-reconstruction)
-- [3. PyLisp: Recursive puzzles (⋆⋆)](#pylisp-recursive-puzzles)
-- [4. Hash Table with chaining (⋆⋆⋆)](#hash-table-with-chaining)
-- [5. String Edit Distance (⋆⋆⋆)](#string-edit-distance)
-- [6. A Graph library (⋆⋆⋆)](#a-graph-library)
-- [7. Dancing Links (⋆⋆⋆⋆)](#dancing-links)
+- [1. Priority Queue ⋆](#priority-queue)
+- [2. Non-deterministic LCS reconstruction ⋆](#non-deterministic-lcs-reconstruction)
+- [3. PyLisp: Recursive puzzles ⋆⋆](#pylisp-recursive-puzzles)
+- [4. Hash Table with chaining ⋆⋆⋆](#hash-table-with-chaining)
+- [5. String Edit Distance ⋆⋆⋆](#string-edit-distance)
+- [6. A Graph library ⋆⋆⋆](#a-graph-library)
+- [7. Dancing Links ⋆⋆⋆⋆](#dancing-links)
 - [What's a Toroidal Linked List?](#whats-a-toroidal-linked-list)
 
 ## 1. Priority Queue (⋆)
