@@ -2,13 +2,13 @@
 
 ## Table of Contents
 
-- [1. Priority Queue](#priority-queue)
-- [2. Non-deterministic LCS reconstruction](#non-deterministic-lcs-reconstruction)
-- [3. PyLisp: Recursive puzzles](#pylisp-recursive-puzzles)
-- [4. Hash Table with chaining](#hash-table-with-chaining)
-- [5. String Edit Distance](#string-edit-distance)
-- [6. A Graph library](#a-graph-library)
-- [7. Dancing Links](#dancing-links)
+- [1. Priority Queue](#1-priority-queue)
+- [2. Non-deterministic LCS reconstruction](#2-non-deterministic-lcs-reconstruction)
+- [3. PyLisp: Recursive puzzles](#3-pylisp-recursive-puzzles)
+- [4. Hash Table with chaining](#4-hash-table-with-chaining)
+- [5. String Edit Distance](#5-string-edit-distance)
+- [6. A Graph library](#6-a-graph-library)
+- [7. Dancing Links](#7-dancing-links)
 - [What's a Toroidal Linked List?](#whats-a-toroidal-linked-list)
 
 ## 1. Priority Queue
@@ -19,7 +19,7 @@ A priority queue maintains a set of elements, each associated with a value (a *k
 - `Extract-Max()` removes and returns the element with the largest key.
 - `Increase-Key(x, k)` increases the value of element `x`’s key to the new value `k`.
 
-Priority queue operations are typically implemented with a heap. This projet implements a priority queue library, i.e., a Heap class that supports not only the operations needed to create a new heap (`Build-Max-Heap` and `Max-Heapify`), but also the priority queue functionalities.
+Priority queue operations are typically implemented with a heap. This project implements a priority queue library, i.e., a Heap class that supports not only the operations needed to create a new heap (`Build-Max-Heap` and `Max-Heapify`), but also the priority queue functionalities.
 
 ### Files Used
 - heapsort_skeleton.py  
@@ -159,7 +159,9 @@ Provide adequate testing.
 
 ## 7. Dancing Links
 
-The exact cover problem takes a matrix of 0s and 1s as an input. Its solution is a set of rows that selects exactly one 1 in each column. Write a Python module that implements Donald Knuth’s solution to the problem, where:
+The exact cover problem takes a matrix of
+
+ 0s and 1s as an input. Its solution is a set of rows that selects exactly one 1 in each column. Write a Python module that implements Donald Knuth’s solution to the problem, where:
 
 - the matrix to be passed as an input is a two-dimensional array
 - the program constructs an internal, working version of the matrix as a grid of linked lists
@@ -313,7 +315,7 @@ class DLX:
                     row_nodes.append(node)
 ```
 
-In the implemented co code:
+In the implemented code:
 - Each `DLXNode` connects to its neighbors (left, right, up, down) creating a [toroidal](#whats-a-toroidal-linked-list) structure.
 - `create_toridal_matrix` builds this structure based on the input matrix.
 
