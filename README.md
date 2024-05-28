@@ -20,8 +20,8 @@ A priority queue maintains a set of elements, each associated with a value (a *k
 
 Priority queue operations are typically implemented with a heap. This projet implements a priority queue library, i.e., a Heap class that supports not only the operations needed to create a new heap (`Build-Max-Heap` and `Max-Heapify`), but also the priority queue functionalities.
 
-### Files
-- the [HeapSort skeleton](heapsort_skeleton.py)  
+### Files Used
+- heapsort_skeleton.py  
 
 ### References
 - *CLRS3*, Chapter 6.1 through 6.3 (for the basic Heap implementation)
@@ -34,7 +34,7 @@ The recursive version of the LCS algorithm was the topic of one of your hands-on
 - the ability to return not one, but *all* solution LCSs, as a list of sequences.
 
 ### Files
-No file provided, but you may use the code we wrote in class as a starting point.
+No file provided; used the code written in class as a starting point.
 
 ### References
 - *CLRS3*, Chapter 15, for the general presentation of the LCS problem.
@@ -47,25 +47,22 @@ There are two main tasks:
 - implement in Python three functions that operate on sequences and are found in a number of functional languages (LISP, ML, Scheme, Haskell): `car()`, `cdr()`, and `cons()`.
 - use these functions to solve a number of programming puzzles involving lists.
 
-### Files
-- [PyLisp module](pylisp_skeleton.py)
-
-### References
-- [PyLisp documentation](pylisp_doc/_build/html/index.html)
+### Files Used
+- pylisp_skeleton.py
 
 ## 4. Hash Table with chaining (⋆⋆⋆)
 
-You implement a hash table, where collisions are solved through chaining (i.e., linked lists), as described in CLRS 11.2-3, and the related lecture slides. Both integers and strings can be used as keys.
+Implement a hash table, where collisions are solved through chaining (i.e., linked lists), as described in CLRS 11.2-3, and the related lecture slides. Both integers and strings can be used as keys.
 
 - you are provided with a functional LinkedList class
 - you write the HashTable class, with the expected methods: `Insert()`, `Search`, `Delete()`.
 
-### Files
-- [LinkedList module](linked_list.py)
+### Files Used
+- linked_list.py
 
 ### References
 - *CLRS3*, Chapter 11.2-3
-- [“Hash Tables” lecture in resources directory](hash_table_lecture.pdf) 
+- “hash_table_lecture.pdf” lecture in resources directory
 
 ## 5. String Edit Distance (⋆⋆⋆)
 
@@ -74,7 +71,7 @@ The edit distance scores the similarity between two strings, by computing the co
 The general, high-level requirements are exposed in Problem 15-5 in CLRS3 (p. 406-408), part (a). You may disregard question (b), which asks to restate the DNA alignment problem in terms of the edit distance problem.
 
 ### References
-- Crochemore, Hancart, Lecroq, *Algorithmique du Texte*, Vuibert, 2001, p. 231-232: provides the recurrence, as well as the pseudo-code of the edit distance computation, with very useful diagrams - parameters are slightly different, but this can be easily adapted. Use this [English translation of the excerpt (PDF)](crochemore_hancart_lecroq_2001.pdf).
+- Crochemore, Hancart, Lecroq, *Algorithmique du Texte*, Vuibert, 2001, p. 231-232: provides the recurrence, as well as the pseudo-code of the edit distance computation, with very useful diagrams - parameters are slightly different, but this can be easily adapted. (crochemore_hancart_lecroq_2001.pdf in the resources directory)
 
 ### Edit Distance Table:
 
@@ -157,7 +154,7 @@ Provide adequate testing.
 
 ### References
 - CLRS, Appendix B (Graphs: concepts and representation).
-- Lecture slides
+- Lecture slides (to be added soon--resources directory)
 
 ## 7. Dancing Links (⋆⋆⋆⋆)
 
@@ -169,10 +166,10 @@ The exact cover problem takes a matrix of 0s and 1s as an input. Its solution is
 
 This project tests a wide range of your programming skills: working with complex pointer-based structures, tricky boundary cases and recursion, using a small set of custom objects. Knuth’s pseudo-code is your guide, but you have to fill in some of the details, in order to obtain a working Python implementation.
 
-*Note: You can get full credit for a class that implements just a subset of the requirements above. A module that just constructs the grid of linked lists from the provided matrix, and equips it with the necessary procedures to remove and restore nodes is a fine project in itself. If you reach that milestone early, you can then extend the class with the backtracking algorithm.*
+*Note: Implementing a subset of the requirements above. A module that just constructs the grid of linked lists from the provided matrix, and equips it with the necessary procedures to remove and restore nodes is a fine project in itself. You could then extend the class with the backtracking algorithm.*
 
 ### References
-- [Knuth, Donald E. (2000), “Dancing links”, in Davies, Jim; Roscoe, Bill; Woodcock, Jim, *Millennial Perspectives in Computer Science: Proceedings of the 1999 Oxford-Microsoft Symposium in Honour of Sir Tony Hoare*, Palgrave, pp. 187-214, ISBN 978-0-333-92230-9, arXiv:cs/0011047](dancing-color.pdf)
+- Knuth, Donald E. (2000), “Dancing links”, in Davies, Jim; Roscoe, Bill; Woodcock, Jim, *Millennial Perspectives in Computer Science: Proceedings of the 1999 Oxford-Microsoft Symposium in Honour of Sir Tony Hoare*, Palgrave, pp. 187-214, ISBN 978-0-333-92230-9, arXiv:cs/0011047 (dancing-color.pdf in resources directory)
 
 ### How It Works:
 
@@ -180,7 +177,7 @@ This project tests a wide range of your programming skills: working with complex
    - Each element in the matrix is represented as a node in a doubly linked list. Each node has pointers to its left, right, up, and down neighbors. This structure allows for efficient removal and restoration of rows and columns during the search process.
 
 2. **Initialization:**
-   - The matrix is transformed into a [toroidal](#whats-a-toroidal-linked-list) linked list, where each node is connected to its neighbors, and columns are linked to form a circular structure.
+   - The matrix is transformed into a [toroidal linked list](#whats-a-toroidal-linked-list), where each node is connected to its neighbors, and columns are linked to form a circular structure.
 
 3. **Covering Columns:**
    - When a column is covered, it is removed from the header, and all rows containing a 1 in that column are also removed. This ensures that no other rows in the solution can use that column.
