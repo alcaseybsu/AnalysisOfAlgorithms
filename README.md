@@ -1,6 +1,9 @@
 # Explanations:
 
 ## Table of Contents
+
+The *'s represent the project's level of difficulty.
+
 - [1. Priority Queue (⋆)](#priority-queue)
 - [2. Non-deterministic LCS reconstruction (⋆)](#non-deterministic-lcs-reconstruction)
 - [3. PyLisp: Recursive puzzles (⋆⋆)](#pylisp-recursive-puzzles)
