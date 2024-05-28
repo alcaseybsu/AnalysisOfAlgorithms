@@ -1,6 +1,3 @@
-Here's the updated README with the explanation for the Dancing Links project included:
-
-```markdown
 # Explanations:
 
 ## Dancing Links (⋆⋆⋆⋆)
@@ -113,4 +110,4 @@ The optimal alignment is reconstructed by tracing back from `T[m][n]` to `T[0][0
 Total cost: \(0 + 1 + 1 + 0 + 1 + 0 = 3\).
 
 Therefore, the output matches the expected results for the edit distance algorithm with the given inputs and default costs. The edit distance is 3, and the alignment correctly reflects the operations needed to transform "ACGA" into "ATGCTA".
-```
+
