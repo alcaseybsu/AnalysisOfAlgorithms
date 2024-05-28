@@ -91,5 +91,3 @@ if __name__ == "__main__":
     print("Optimal alignment:")
     for pair in alignment:
         print(pair)
-
-    
